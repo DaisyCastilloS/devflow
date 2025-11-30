@@ -1,0 +1,8 @@
+# DEVFLOW Security Policy
+# https://securitytxt.org/
+
+Contact: mailto:seguridad@devflow.com
+Expires: 2026-12-31T23:59:00.000Z
+Preferred-Languages: es, en
+Canonical: https://devflow.com/.well-known/security.txt
+Policy: https://devflow.com/privacidad

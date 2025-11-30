@@ -1,0 +1,35 @@
+# ============================================
+# DEVFLOW - Redirects Configuration
+# For Netlify / Cloudflare Pages
+# ============================================
+
+# Force HTTPS
+http://devflow.com/* https://devflow.com/:splat 301!
+http://www.devflow.com/* https://devflow.com/:splat 301!
+https://www.devflow.com/* https://devflow.com/:splat 301!
+
+# Old URL redirects (examples)
+/home /  301
+/inicio / 301
+/services /servicios 301
+/about /nosotros 301
+/portfolio /portafolio 301
+/contact /contacto 301
+/privacy /privacidad 301
+/terms /terminos 301
+
+# Language redirects
+/en / 302
+/es / 302
+
+# Social media redirects
+/linkedin https://linkedin.com/company/devflow 302
+/instagram https://instagram.com/devflow 302
+/twitter https://twitter.com/devflow 302
+/github https://github.com/devflow 302
+
+# WhatsApp direct link
+/whatsapp https://wa.me/56912345678?text=Hola!%20Quiero%20cotizar%20mi%20página%20web 302
+
+# SPA fallback - 404 handling
+/* /404.html 404

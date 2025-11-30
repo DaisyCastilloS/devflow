@@ -1,0 +1,38 @@
+/* TEAM */
+Company: DEVFLOW
+Site: https://devflow.com
+Location: Antofagasta, Chile
+Contact: hola@devflow.com
+
+/* THANKS */
+Name: Our amazing clients
+Role: For trusting us with their digital presence
+
+/* SITE */
+Last update: 2024
+Language: Spanish / English
+Standards: HTML5, CSS3, ES6+
+Framework: Astro 4.x
+UI Framework: Vue.js 3.x
+IDE: VS Code
+Hosting: Vercel / Netlify
+Analytics: Google Analytics 4
+Performance: 90+ Lighthouse Score
+
+/* TECHNOLOGIES */
+- Astro (Static Site Generator)
+- Vue.js 3 (Reactive Components)
+- TypeScript (Type Safety)
+- Node.js (Runtime)
+- PostgreSQL (Database)
+- Tailwind CSS (Styling)
+- PNPM (Package Manager)
+
+/* SOCIAL */
+Twitter: @devflow
+Instagram: @devflow
+LinkedIn: /company/devflow
+GitHub: /devflow
+
+/* LICENSE */
+All rights reserved © DEVFLOW 2024

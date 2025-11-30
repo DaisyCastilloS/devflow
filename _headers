@@ -1,0 +1,91 @@
+# ============================================
+# DEVFLOW - Security Headers
+# For Netlify, Cloudflare Pages, Vercel
+# ============================================
+
+/*
+  # Security Headers
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://static.hotjar.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://api.whatsapp.com https://*.hotjar.com wss://*.hotjar.com; frame-src 'self' https://www.google.com https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self';
+  
+  # HSTS (HTTP Strict Transport Security)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  
+  # Performance
+  X-DNS-Prefetch-Control: on
+
+# Cache Static Assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: text/css
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/javascript
+
+# Cache Images
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/*.svg
+  Cache-Control: public, max-age=31536000
+  Content-Type: image/svg+xml
+
+/*.png
+  Cache-Control: public, max-age=2592000
+  Content-Type: image/png
+
+/*.jpg
+  Cache-Control: public, max-age=2592000
+  Content-Type: image/jpeg
+
+/*.webp
+  Cache-Control: public, max-age=2592000
+  Content-Type: image/webp
+
+# Fonts
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff2
+
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff
+
+# HTML Pages - Short cache for SEO
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Manifest and Service Worker
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/javascript
+
+# Sitemap
+/sitemap*.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+# Robots
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain

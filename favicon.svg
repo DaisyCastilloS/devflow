@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 50">
+  <!-- Bracket { -->
+  <path d="M8 8C8 8 4 8 4 14V20C4 20 4 25 0 25C4 25 4 30 4 30V36C4 42 8 42 8 42" stroke="#002B49" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Wave 1 - Navy -->
+  <path d="M18 12C18 12 28 9 38 14C48 19 52 18 52 18" stroke="#002B49" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Wave 2 - Teal -->
+  <path d="M16 25C16 25 26 21 38 27C50 33 54 31 54 31" stroke="#00A99D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Wave 3 - Cyan -->
+  <path d="M18 38C18 38 28 34 40 40C52 46 54 44 54 44" stroke="#00D2FF" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

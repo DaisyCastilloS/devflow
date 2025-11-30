@@ -1,0 +1,115 @@
+# ==============================================
+# Robots.txt for DEVFLOW
+# https://devflow.com
+# Last Updated: 2024
+# ==============================================
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+Allow: /servicios
+Allow: /nosotros
+Allow: /portafolio
+Allow: /contacto
+Allow: /privacidad
+Allow: /terminos
+
+# Block non-public areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /*.json$
+
+# Allow important static resources
+Allow: /assets/
+Allow: /images/
+Allow: /icons/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.webp
+
+# ==============================================
+# Google Bot
+# ==============================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+
+User-agent: Googlebot-News
+Allow: /
+
+# ==============================================
+# Bing Bot
+# ==============================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: msnbot
+Allow: /
+
+# ==============================================
+# Other Major Bots
+# ==============================================
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ==============================================
+# Block Bad Bots
+# ==============================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# ==============================================
+# Sitemaps
+# ==============================================
+Sitemap: https://devflow.com/sitemap-index.xml
+Sitemap: https://devflow.com/sitemap-0.xml
+
+# ==============================================
+# Host (for Yandex)
+# ==============================================
+Host: https://devflow.com
